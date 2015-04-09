@@ -1,0 +1,650 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>newAST - TIP API - tip.newAST</title>
+          <meta name="description" content="newAST - TIP API - tip.newAST" />
+          <meta name="keywords" content="newAST TIP API tip.newAST" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'tip.newAST.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../lib/package_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="tip">tip</a></p>
+        <h1>newAST</h1> <span class="permalink">
+      <a href="../../index.html#tip.newAST.package" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newAST</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="tip.newAST.AAssignStmt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AAssignStmtextendsASTNodewithAStmtwithProductwithSerializable"></a>
+      <a id="AAssignStmt:AAssignStmt"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AAssignStmt.html"><span class="name">AAssignStmt</span></a><span class="params">(<span name="left">left: <a href="AExpr.html" class="extype" name="tip.newAST.AExpr">AExpr</a></span>, <span name="right">right: <a href="AExpr.html" class="extype" name="tip.newAST.AExpr">AExpr</a></span>, <span name="offset">offset: <a href="Loc.html" class="extype" name="tip.newAST.Loc">Loc</a></span>)</span><span class="result"> extends <a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a> with <a href="AStmt.html" class="extype" name="tip.newAST.AStmt">AStmt</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@AAssignStmtextendsASTNodewithAStmtwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.ABinaryOp" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ABinaryOpextendsASTNodewithAExprwithProductwithSerializable"></a>
+      <a id="ABinaryOp:ABinaryOp"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ABinaryOp.html"><span class="name">ABinaryOp</span></a><span class="params">(<span name="operator">operator: <a href="Operator.html" class="extype" name="tip.newAST.Operator">Operator</a></span>, <span name="left">left: <a href="AExpr.html" class="extype" name="tip.newAST.AExpr">AExpr</a></span>, <span name="right">right: <a href="AExpr.html" class="extype" name="tip.newAST.AExpr">AExpr</a></span>, <span name="offset">offset: <a href="Loc.html" class="extype" name="tip.newAST.Loc">Loc</a></span>)</span><span class="params">(<span name="meta">meta: <a href="AstMetadata.html" class="extype" name="tip.newAST.AstMetadata">AstMetadata</a> = <span class="symbol">AstMetadata()</span></span>)</span><span class="result"> extends <a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a> with <a href="AExpr.html" class="extype" name="tip.newAST.AExpr">AExpr</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@ABinaryOpextendsASTNodewithAExprwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.ABlockStmt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ABlockStmtextendsASTNodewithAStmtwithProductwithSerializable"></a>
+      <a id="ABlockStmt:ABlockStmt"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ABlockStmt.html"><span class="name">ABlockStmt</span></a><span class="params">(<span name="content">content: <span class="extype" name="scala.collection.immutable.Seq">Seq</span>[<a href="AStmt.html" class="extype" name="tip.newAST.AStmt">AStmt</a>]</span>, <span name="offset">offset: <a href="Loc.html" class="extype" name="tip.newAST.Loc">Loc</a></span>)</span><span class="result"> extends <a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a> with <a href="AStmt.html" class="extype" name="tip.newAST.AStmt">AStmt</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@ABlockStmtextendsASTNodewithAStmtwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.ACallFuncExpr" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ACallFuncExprextendsASTNodewithAExprwithProductwithSerializable"></a>
+      <a id="ACallFuncExpr:ACallFuncExpr"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ACallFuncExpr.html"><span class="name">ACallFuncExpr</span></a><span class="params">(<span name="targetFun">targetFun: <a href="AExpr.html" class="extype" name="tip.newAST.AExpr">AExpr</a></span>, <span name="args">args: <span class="extype" name="scala.collection.immutable.Seq">Seq</span>[<a href="AExpr.html" class="extype" name="tip.newAST.AExpr">AExpr</a>]</span>, <span name="offset">offset: <a href="Loc.html" class="extype" name="tip.newAST.Loc">Loc</a></span>)</span><span class="params">(<span name="meta">meta: <a href="AstMetadata.html" class="extype" name="tip.newAST.AstMetadata">AstMetadata</a> = <span class="symbol">AstMetadata()</span></span>)</span><span class="result"> extends <a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a> with <a href="AExpr.html" class="extype" name="tip.newAST.AExpr">AExpr</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@ACallFuncExprextendsASTNodewithAExprwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.AExpr" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AExprextendsASTNode"></a>
+      <a id="AExpr:AExpr"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="AExpr.html"><span class="name">AExpr</span></a><span class="result"> extends <a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@AExprextendsASTNode" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.AFunDeclaration" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AFunDeclarationextendsASTNodewithProductwithSerializable"></a>
+      <a id="AFunDeclaration:AFunDeclaration"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AFunDeclaration.html"><span class="name">AFunDeclaration</span></a><span class="params">(<span name="name">name: <a href="AIdentifier.html" class="extype" name="tip.newAST.AIdentifier">AIdentifier</a></span>, <span name="args">args: <span class="extype" name="scala.collection.immutable.Seq">Seq</span>[<a href="AIdentifier.html" class="extype" name="tip.newAST.AIdentifier">AIdentifier</a>]</span>, <span name="stmts">stmts: <a href="ABlockStmt.html" class="extype" name="tip.newAST.ABlockStmt">ABlockStmt</a></span>, <span name="offset">offset: <a href="Loc.html" class="extype" name="tip.newAST.Loc">Loc</a></span>)</span><span class="params">(<span name="meta">meta: <a href="AstMetadata.html" class="extype" name="tip.newAST.AstMetadata">AstMetadata</a> = <span class="symbol">AstMetadata()</span></span>)</span><span class="result"> extends <a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@AFunDeclarationextendsASTNodewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.AIdentifier" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AIdentifierextendsASTNodewithAExprwithASTAtomwithProductwithSerializable"></a>
+      <a id="AIdentifier:AIdentifier"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AIdentifier.html"><span class="name">AIdentifier</span></a><span class="params">(<span name="value">value: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="offset">offset: <a href="Loc.html" class="extype" name="tip.newAST.Loc">Loc</a></span>)</span><span class="params">(<span name="meta">meta: <a href="AstMetadata.html" class="extype" name="tip.newAST.AstMetadata">AstMetadata</a> = <span class="symbol">AstMetadata()</span></span>)</span><span class="result"> extends <a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a> with <a href="AExpr.html" class="extype" name="tip.newAST.AExpr">AExpr</a> with <a href="ASTAtom.html" class="extype" name="tip.newAST.ASTAtom">ASTAtom</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@AIdentifierextendsASTNodewithAExprwithASTAtomwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.AIfStmt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AIfStmtextendsASTNodewithAStmtwithProductwithSerializable"></a>
+      <a id="AIfStmt:AIfStmt"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AIfStmt.html"><span class="name">AIfStmt</span></a><span class="params">(<span name="guard">guard: <a href="AExpr.html" class="extype" name="tip.newAST.AExpr">AExpr</a></span>, <span name="ifBranch">ifBranch: <a href="AStmt.html" class="extype" name="tip.newAST.AStmt">AStmt</a></span>, <span name="elseBranch">elseBranch: <span class="extype" name="scala.Option">scala.Option</span>[<a href="AStmt.html" class="extype" name="tip.newAST.AStmt">AStmt</a>]</span>, <span name="offset">offset: <a href="Loc.html" class="extype" name="tip.newAST.Loc">Loc</a></span>)</span><span class="result"> extends <a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a> with <a href="AStmt.html" class="extype" name="tip.newAST.AStmt">AStmt</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@AIfStmtextendsASTNodewithAStmtwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.AInput" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AInputextendsASTNodewithAExprwithASTAtomwithProductwithSerializable"></a>
+      <a id="AInput:AInput"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AInput.html"><span class="name">AInput</span></a><span class="params">(<span name="offset">offset: <a href="Loc.html" class="extype" name="tip.newAST.Loc">Loc</a></span>)</span><span class="params">(<span name="meta">meta: <a href="AstMetadata.html" class="extype" name="tip.newAST.AstMetadata">AstMetadata</a> = <span class="symbol">AstMetadata()</span></span>)</span><span class="result"> extends <a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a> with <a href="AExpr.html" class="extype" name="tip.newAST.AExpr">AExpr</a> with <a href="ASTAtom.html" class="extype" name="tip.newAST.ASTAtom">ASTAtom</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@AInputextendsASTNodewithAExprwithASTAtomwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.AMalloc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AMallocextendsASTNodewithAExprwithASTAtomwithProductwithSerializable"></a>
+      <a id="AMalloc:AMalloc"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AMalloc.html"><span class="name">AMalloc</span></a><span class="params">(<span name="offset">offset: <a href="Loc.html" class="extype" name="tip.newAST.Loc">Loc</a></span>)</span><span class="params">(<span name="meta">meta: <a href="AstMetadata.html" class="extype" name="tip.newAST.AstMetadata">AstMetadata</a> = <span class="symbol">AstMetadata()</span></span>)</span><span class="result"> extends <a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a> with <a href="AExpr.html" class="extype" name="tip.newAST.AExpr">AExpr</a> with <a href="ASTAtom.html" class="extype" name="tip.newAST.ASTAtom">ASTAtom</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@AMallocextendsASTNodewithAExprwithASTAtomwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.ANull" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ANullextendsASTNodewithAExprwithASTAtomwithProductwithSerializable"></a>
+      <a id="ANull:ANull"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ANull.html"><span class="name">ANull</span></a><span class="params">(<span name="offset">offset: <a href="Loc.html" class="extype" name="tip.newAST.Loc">Loc</a></span>)</span><span class="params">(<span name="meta">meta: <a href="AstMetadata.html" class="extype" name="tip.newAST.AstMetadata">AstMetadata</a> = <span class="symbol">AstMetadata()</span></span>)</span><span class="result"> extends <a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a> with <a href="AExpr.html" class="extype" name="tip.newAST.AExpr">AExpr</a> with <a href="ASTAtom.html" class="extype" name="tip.newAST.ASTAtom">ASTAtom</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@ANullextendsASTNodewithAExprwithASTAtomwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.ANumber" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ANumberextendsASTNodewithAExprwithASTAtomwithProductwithSerializable"></a>
+      <a id="ANumber:ANumber"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ANumber.html"><span class="name">ANumber</span></a><span class="params">(<span name="value">value: <span class="extype" name="scala.Int">Int</span></span>, <span name="offset">offset: <a href="Loc.html" class="extype" name="tip.newAST.Loc">Loc</a></span>)</span><span class="params">(<span name="meta">meta: <a href="AstMetadata.html" class="extype" name="tip.newAST.AstMetadata">AstMetadata</a> = <span class="symbol">AstMetadata()</span></span>)</span><span class="result"> extends <a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a> with <a href="AExpr.html" class="extype" name="tip.newAST.AExpr">AExpr</a> with <a href="ASTAtom.html" class="extype" name="tip.newAST.ASTAtom">ASTAtom</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@ANumberextendsASTNodewithAExprwithASTAtomwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.AProgram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AProgramextendsASTNodewithProductwithSerializable"></a>
+      <a id="AProgram:AProgram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AProgram.html"><span class="name">AProgram</span></a><span class="params">(<span name="fun">fun: <span class="extype" name="scala.collection.immutable.Seq">Seq</span>[<a href="AFunDeclaration.html" class="extype" name="tip.newAST.AFunDeclaration">AFunDeclaration</a>]</span>, <span name="offset">offset: <a href="Loc.html" class="extype" name="tip.newAST.Loc">Loc</a></span>)</span><span class="result"> extends <a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@AProgramextendsASTNodewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.AReturnStmt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AReturnStmtextendsASTNodewithAStmtwithProductwithSerializable"></a>
+      <a id="AReturnStmt:AReturnStmt"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AReturnStmt.html"><span class="name">AReturnStmt</span></a><span class="params">(<span name="value">value: <a href="AExpr.html" class="extype" name="tip.newAST.AExpr">AExpr</a></span>, <span name="offset">offset: <a href="Loc.html" class="extype" name="tip.newAST.Loc">Loc</a></span>)</span><span class="result"> extends <a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a> with <a href="AStmt.html" class="extype" name="tip.newAST.AStmt">AStmt</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@AReturnStmtextendsASTNodewithAStmtwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.ASTAtom" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ASTAtomextendsASTNode"></a>
+      <a id="ASTAtom:ASTAtom"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ASTAtom.html"><span class="name">ASTAtom</span></a><span class="result"> extends <a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@ASTAtomextendsASTNode" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.ASTNode" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ASTNodeextendsAnyRef"></a>
+      <a id="ASTNode:ASTNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ASTNode.html"><span class="name">ASTNode</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@ASTNodeextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.AStmt" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AStmtextendsASTNode"></a>
+      <a id="AStmt:AStmt"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="AStmt.html"><span class="name">AStmt</span></a><span class="result"> extends <a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@AStmtextendsASTNode" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.AUnaryOp" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AUnaryOpextendsASTNodewithAExprwithProductwithSerializable"></a>
+      <a id="AUnaryOp:AUnaryOp"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AUnaryOp.html"><span class="name">AUnaryOp</span></a><span class="params">(<span name="operator">operator: <a href="Operator.html" class="extype" name="tip.newAST.Operator">Operator</a></span>, <span name="target">target: <a href="AExpr.html" class="extype" name="tip.newAST.AExpr">AExpr</a></span>, <span name="offset">offset: <a href="Loc.html" class="extype" name="tip.newAST.Loc">Loc</a></span>)</span><span class="params">(<span name="meta">meta: <a href="AstMetadata.html" class="extype" name="tip.newAST.AstMetadata">AstMetadata</a> = <span class="symbol">AstMetadata()</span></span>)</span><span class="result"> extends <a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a> with <a href="AExpr.html" class="extype" name="tip.newAST.AExpr">AExpr</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@AUnaryOpextendsASTNodewithAExprwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.AVarStmt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AVarStmtextendsASTNodewithAStmtwithProductwithSerializable"></a>
+      <a id="AVarStmt:AVarStmt"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AVarStmt.html"><span class="name">AVarStmt</span></a><span class="params">(<span name="declIds">declIds: <span class="extype" name="scala.collection.immutable.Seq">Seq</span>[<a href="AIdentifier.html" class="extype" name="tip.newAST.AIdentifier">AIdentifier</a>]</span>, <span name="offset">offset: <a href="Loc.html" class="extype" name="tip.newAST.Loc">Loc</a></span>)</span><span class="result"> extends <a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a> with <a href="AStmt.html" class="extype" name="tip.newAST.AStmt">AStmt</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@AVarStmtextendsASTNodewithAStmtwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.AWhileStmt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AWhileStmtextendsASTNodewithAStmtwithProductwithSerializable"></a>
+      <a id="AWhileStmt:AWhileStmt"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AWhileStmt.html"><span class="name">AWhileStmt</span></a><span class="params">(<span name="guard">guard: <a href="AExpr.html" class="extype" name="tip.newAST.AExpr">AExpr</a></span>, <span name="innerBlock">innerBlock: <a href="AStmt.html" class="extype" name="tip.newAST.AStmt">AStmt</a></span>, <span name="offset">offset: <a href="Loc.html" class="extype" name="tip.newAST.Loc">Loc</a></span>)</span><span class="result"> extends <a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a> with <a href="AStmt.html" class="extype" name="tip.newAST.AStmt">AStmt</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@AWhileStmtextendsASTNodewithAStmtwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.AoutputStmt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AoutputStmtextendsASTNodewithAStmtwithProductwithSerializable"></a>
+      <a id="AoutputStmt:AoutputStmt"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AoutputStmt.html"><span class="name">AoutputStmt</span></a><span class="params">(<span name="value">value: <a href="AExpr.html" class="extype" name="tip.newAST.AExpr">AExpr</a></span>, <span name="offset">offset: <a href="Loc.html" class="extype" name="tip.newAST.Loc">Loc</a></span>)</span><span class="result"> extends <a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a> with <a href="AStmt.html" class="extype" name="tip.newAST.AStmt">AStmt</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@AoutputStmtextendsASTNodewithAStmtwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.AstMetadata" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AstMetadataextendsProductwithSerializable"></a>
+      <a id="AstMetadata:AstMetadata"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AstMetadata.html"><span class="name">AstMetadata</span></a><span class="params">(<span name="definition">definition: <span class="extype" name="scala.Option">scala.Option</span>[<a href="ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a>] = <span class="symbol">None</span></span>, <span name="theType">theType: <span class="extype" name="scala.Option">scala.Option</span>[<a href="../types/TipType.html" class="extype" name="tip.types.TipType">TipType</a>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@AstMetadataextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A class holding all the meta-informations about an AST node collected during
+the various phases of the analysis
+</p><div class="fullcomment"><div class="comment cmt"><p>A class holding all the meta-informations about an AST node collected during
+the various phases of the analysis
+</p></div><dl class="paramcmts block"><dt class="param">definition</dt><dd class="cmt"><p>the definition point point of the node (available for identifiers only)</p></dd><dt class="param">theType</dt><dd class="cmt"><p>the type of the node (available for expressions only)
+</p></dd></dl></div>
+    </li><li name="tip.newAST.DerefOp" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DerefOpextendsOperatorwithProductwithSerializable"></a>
+      <a id="DerefOp:DerefOp"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DerefOp.html"><span class="name">DerefOp</span></a><span class="params">()</span><span class="result"> extends <a href="Operator.html" class="extype" name="tip.newAST.Operator">Operator</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@DerefOpextendsOperatorwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.Divide" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DivideextendsOperatorwithProductwithSerializable"></a>
+      <a id="Divide:Divide"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Divide.html"><span class="name">Divide</span></a><span class="params">()</span><span class="result"> extends <a href="Operator.html" class="extype" name="tip.newAST.Operator">Operator</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@DivideextendsOperatorwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.Eqq" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EqqextendsOperatorwithProductwithSerializable"></a>
+      <a id="Eqq:Eqq"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Eqq.html"><span class="name">Eqq</span></a><span class="params">()</span><span class="result"> extends <a href="Operator.html" class="extype" name="tip.newAST.Operator">Operator</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@EqqextendsOperatorwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.GreatThan" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GreatThanextendsOperatorwithProductwithSerializable"></a>
+      <a id="GreatThan:GreatThan"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="GreatThan.html"><span class="name">GreatThan</span></a><span class="params">()</span><span class="result"> extends <a href="Operator.html" class="extype" name="tip.newAST.Operator">Operator</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@GreatThanextendsOperatorwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.Loc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LocextendsProductwithSerializable"></a>
+      <a id="Loc:Loc"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Loc.html"><span class="name">Loc</span></a><span class="params">(<span name="line">line: <span class="extype" name="scala.Int">Int</span></span>, <span name="col">col: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@LocextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.Minus" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MinusextendsOperatorwithProductwithSerializable"></a>
+      <a id="Minus:Minus"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Minus.html"><span class="name">Minus</span></a><span class="params">()</span><span class="result"> extends <a href="Operator.html" class="extype" name="tip.newAST.Operator">Operator</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@MinusextendsOperatorwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.Operator" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="OperatorextendsAnyRef"></a>
+      <a id="Operator:Operator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Operator.html"><span class="name">Operator</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@OperatorextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.Plus" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PlusextendsOperatorwithProductwithSerializable"></a>
+      <a id="Plus:Plus"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Plus.html"><span class="name">Plus</span></a><span class="params">()</span><span class="result"> extends <a href="Operator.html" class="extype" name="tip.newAST.Operator">Operator</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@PlusextendsOperatorwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.RefOp" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RefOpextendsOperatorwithProductwithSerializable"></a>
+      <a id="RefOp:RefOp"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="RefOp.html"><span class="name">RefOp</span></a><span class="params">()</span><span class="result"> extends <a href="Operator.html" class="extype" name="tip.newAST.Operator">Operator</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@RefOpextendsOperatorwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="tip.newAST.Times" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TimesextendsOperatorwithProductwithSerializable"></a>
+      <a id="Times:Times"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Times.html"><span class="name">Times</span></a><span class="params">()</span><span class="result"> extends <a href="Operator.html" class="extype" name="tip.newAST.Operator">Operator</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.newAST.package@TimesextendsOperatorwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

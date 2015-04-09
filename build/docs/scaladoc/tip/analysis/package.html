@@ -1,0 +1,160 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>analysis - TIP API - tip.analysis</title>
+          <meta name="description" content="analysis - TIP API - tip.analysis" />
+          <meta name="keywords" content="analysis TIP API tip.analysis" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'tip.analysis.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../lib/package_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="tip">tip</a></p>
+        <h1>analysis</h1> <span class="permalink">
+      <a href="../../index.html#tip.analysis.package" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">analysis</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="tip.analysis.Constraint" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ConstraintextendsProductwithSerializable"></a>
+      <a id="Constraint:Constraint"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Constraint.html"><span class="name">Constraint</span></a><span class="params">(<span name="t1">t1: <a href="../solvers/Term.html" class="extype" name="tip.solvers.Term">Term</a>[<a href="../types/TipType.html" class="extype" name="tip.types.TipType">TipType</a>]</span>, <span name="t2">t2: <a href="../solvers/Term.html" class="extype" name="tip.solvers.Term">Term</a>[<a href="../types/TipType.html" class="extype" name="tip.types.TipType">TipType</a>]</span>, <span name="gen">gen: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.analysis.package@ConstraintextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A class representing an equality constraint t1 == t2
+</p><div class="fullcomment"><div class="comment cmt"><p>A class representing an equality constraint t1 == t2
+</p></div><dl class="paramcmts block"><dt class="param">t1</dt><dd class="cmt"><p>the left-hand of the constraint</p></dd><dt class="param">t2</dt><dd class="cmt"><p>the right-hand side of the constraint</p></dd><dt class="param">gen</dt><dd class="cmt"><p>a string representing where the constraint is generated w.r.t. the program
+</p></dd></dl></div>
+    </li><li name="tip.analysis.DeclarationAnalysis" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DeclarationAnalysisextendsDepthFirstAstVisitor[scala.collection.immutable.Map[String,tip.newAST.ASTNode]]withProductwithSerializable"></a>
+      <a id="DeclarationAnalysis:DeclarationAnalysis"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DeclarationAnalysis.html"><span class="name">DeclarationAnalysis</span></a><span class="params">(<span name="prog">prog: <a href="../newAST/AProgram.html" class="extype" name="tip.newAST.AProgram">AProgram</a></span>)</span><span class="result"> extends <a href="../AST/DepthFirstAstVisitor.html" class="extype" name="tip.AST.DepthFirstAstVisitor">DepthFirstAstVisitor</a>[<span class="extype" name="scala.collection.immutable.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../newAST/ASTNode.html" class="extype" name="tip.newAST.ASTNode">ASTNode</a>]] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.analysis.package@DeclarationAnalysisextendsDepthFirstAstVisitor[scala.collection.immutable.Map[String,tip.newAST.ASTNode]]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The analysis associates with each identifier its definition,
+using the syntactical scope.</p>
+    </li><li name="tip.analysis.TypeAnalysis" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TypeAnalysisextendsDepthFirstAstVisitor[Null]withProductwithSerializable"></a>
+      <a id="TypeAnalysis:TypeAnalysis"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TypeAnalysis.html"><span class="name">TypeAnalysis</span></a><span class="params">(<span name="program">program: <a href="../newAST/AProgram.html" class="extype" name="tip.newAST.AProgram">AProgram</a></span>)</span><span class="result"> extends <a href="../AST/DepthFirstAstVisitor.html" class="extype" name="tip.AST.DepthFirstAstVisitor">DepthFirstAstVisitor</a>[<span class="extype" name="scala.Null">Null</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#tip.analysis.package@TypeAnalysisextendsDepthFirstAstVisitor[Null]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The analysis associates with each node in the AST a <a href="../types/TipType.html" class="extype" name="tip.types.TipType">tip.types.TipType</a>.</p><div class="fullcomment"><div class="comment cmt"><p>The analysis associates with each node in the AST a <a href="../types/TipType.html" class="extype" name="tip.types.TipType">tip.types.TipType</a>.
+The associated term is meant to represent a TipType (when the inference has established
+a definite type), a TipType with open variables (when the inference has not inferred the identity
+of all the types appearing as subterms) and a rational recursive TipType in the case of <a href="../types/Mu.html" class="extype" name="tip.types.Mu">tip.types.Mu</a>
+</p></div></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
